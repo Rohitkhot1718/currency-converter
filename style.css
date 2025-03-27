@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color:rgb(223, 253, 245);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #374a50;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh auto;
+    width: 25vw;
+    height: 55vh;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+form select,button,input,.msg{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+form{
+    margin: 1.5rem 0 2rem 0;
+}
+.datas input{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    height: 2rem;
+    border: 1px solid rgb(171, 112, 88);
+    margin-top: 0.2rem;
+}
+
+.countries{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.countries i{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.select-container img{
+    max-width:2rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    border: 1px solid rgb(108, 88, 88);
+    border-radius: 0.5rem;
+}
+.select-container select{
+    background-color:  var(--bg-color);
+    font-size: 1rem;
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    font-size: 1rem;
+    font-family:'Tahoma';
+    border: 1px solid rgb(108, 88, 88);
+    height: 2rem;
+    background-color:white;
+}
+button{
+    height: 2rem;
+    background-color: rgb(231, 166, 231);
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and  (min-width: 500px) and (max-width: 1080px){
+    .container{
+        margin: 20vh auto;
+        width: 45vw;
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .container {
+        max-width: 45vw;
+        margin: 20vh auto;
+        height: auto;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 95%;
+        max-width: 95%;
+        margin: 10vh auto;
+    }
+
+    .countries {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .countries i {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+
+    .select-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .from, .to {
+        width: 100%;
+    }
+}
