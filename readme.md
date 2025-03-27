@@ -3,7 +3,7 @@
 A simple web-based currency converter that fetches live exchange rates and displays currency flags.
 
 ## 🚀 Features
-- Fetches live exchange rates using the [Currency API](https://www.npmjs.com/package/@fawazahmed0/currency-api)
+- Fetches live exchange rates using the [Currency API](https://github.com/fawazahmed0/exchange-api)
 - Dropdown selection for currencies with country flags
 - Swap button to switch conversion directions
 - Automatic updates on load and button click
@@ -32,3 +32,6 @@ Simply open `index.html` in any modern web browser.
 - **CSS**
 - **JavaScript (ES6)**
 - **Fetch API** for real-time exchange rates
+
+## Preview 🌟
+[Live Demo](https://rohitkhot1718.github.io/currency-converter/)
